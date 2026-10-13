@@ -1,4 +1,4 @@
-const CACHE = 'true-glass-auto-v2-official-logo';
+const CACHE = 'true-glass-auto-v3-service-policy';
 const CORE = ['./assets/true-glass-auto.png', './', './index.html', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
 self.addEventListener('install', event => {

@@ -199,6 +199,12 @@
             #panel-preview { height:auto !important; overflow:visible !important; }
             .invoice-sheet { transform:none !important; flex:none !important; }
         }
+
+        .invoice-footer { margin-top:auto; padding-top:5mm; break-inside:avoid; page-break-inside:avoid; }
+        .service-policy { border-top:1px solid #cbd5e1; padding-top:3mm; color:#334155; font-size:7.5pt; line-height:1.4; }
+        .service-policy h3 { color:#0f172a; font-weight:800; font-size:8.5pt; margin:0 0 1.5mm; }
+        .service-policy p { margin:0 0 .7mm; }
+        .invoice-footer .social-footer { margin-top:0; padding-top:2.5mm; }
     </style>
 </head>
 <body class="min-h-screen pb-12 md:pb-0">
@@ -349,7 +355,13 @@
                   <table class="items-table"><thead><tr><th>Description</th><th class="text-center w-16">Qty</th><th class="text-right w-28">Unit Price</th><th class="text-right w-28">Total Price</th></tr></thead><tbody id="out-items-body"></tbody></table>
                   <div class="invoice-bottom"><div class="totals-box"><div><b>Subtotal:</b><b id="out-subtotal">$0.00</b></div><div><b id="out-tax-label">Tax (8.625%):</b><b id="out-tax-amount">$0.00</b></div><div class="grand"><span>Total:</span><span id="out-grand-total">$0.00</span></div></div></div>
                 </div>
-                <div class="social-footer"><span>♪ @trueglassauto</span><span>◎ true_glass_auto</span></div>
+                <footer class="invoice-footer"><section class="service-policy" aria-labelledby="policy-heading"><h3 id="policy-heading">WARRANTY &amp; SERVICE POLICY</h3>
+<p>Lifetime Warranty on Labor Only (With Receipt) for repair; vehicle must be brought back to the shop.</p>
+<p>Please leave the protective tape on the glass for 24 hours.</p>
+<p>Please do not drive with the windows down for 24 hours (for rear glass installations only).</p>
+<p>Do Not Wash Vehicle during 24 hours. (NO REFUNDS OR EXCHANGES).</p>
+<p>Note: Vehicles with sensors on front windshields will possibly need to be taken to the original dealership for recalibration.</p>
+<p>NOTE: For all REMOVE &amp; INSTALL&#x27;s there is no warranty, no exceptions.</p></section><div class="social-footer"><span>♪ @trueglassauto</span><span>◎ true_glass_auto</span></div></footer>
             </div>
 
         </section>
